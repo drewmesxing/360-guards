@@ -1,0 +1,92 @@
+@keyframes move01 {
+    from{ transform: translate(-543px); }
+    to{transform: translate(0px);}
+}
+@keyframes move02 {
+    from{ transform: translate(-697px); }
+    to{transform: translate(0px);}
+}
+@keyframes move03 {
+    from{ transform: translate(-851px); }
+    to{transform: translate(0px);}
+}
+@keyframes move04 {
+    from{ transform: translate(-1005px); }
+    to{transform: translate(0px);}
+}
+@keyframes move05 {
+    from{ transform: translate(-1159px); }
+    to{transform: translate(0px);}
+}
+@keyframes revolve {
+    from{ transform: rotate(0deg); }
+    to{transform: rotate(1080deg);}
+}
+#intro_1{
+    animation: move01 3s linear;
+}
+#intro_2{
+    animation: move02 3.81s linear;
+}
+#intro_3{
+    animation: move03 4.66s linear;
+}
+#intro_4{
+    animation: move04 5.44s linear;
+}
+#intro_5{
+    animation: move05 6.25s linear;
+}
+#intro_5 i{
+    animation: revolve 6.25s linear;
+}
+#icons ul #li1 div:hover{
+    animation: jump .3s linear;
+}
+@keyframes jump {
+    from{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    25%{
+        transform: rotate(10deg);
+        opacity: .5;
+    }
+    50%{
+        transform: rotate(-10deg);
+        opacity: 1;
+    }
+    75%{
+        transform: rotate(0deg);
+        opacity: .5;
+    }
+    to{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+#hujiao .phone1:hover,#dingwei .phone2:hover{
+    animation: shake 0.8s linear;
+}
+@keyframes shake{
+    from{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    25%{
+        transform: rotate(25deg);
+        opacity: .8;
+    }
+    50%{
+        transform: rotate(-25deg);
+        opacity: 1;
+    }
+    75%{
+        transform: rotate(25deg);
+        opacity: .8;
+    }
+    to{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
